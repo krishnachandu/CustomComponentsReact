@@ -3,17 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./components/App";
 import Contact from "./contacts";
 
-Contact.forEach(function (cont) {
-  ReactDOM.render(
-    <App
-      name={cont.name}
-      phone={cont.phone}
-      email={cont.email}
-      imgsource={cont.imgURL}
-    />,
-    document.getElementById("root")
-  );
-});
+ReactDOM.render(<App />, document.getElementById("root"));
 
 //1. Apply CSS styles to App.jsx component
 //to match the appearance on the completed app:
